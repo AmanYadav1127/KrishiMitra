@@ -1,0 +1,27 @@
+.confidence {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  padding: 0.16rem 0.45rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.64rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.confidence.high {
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.confidence.medium {
+  background: var(--caution-soft);
+  color: var(--caution);
+}
+
+.confidence.low {
+  background: var(--danger-soft);
+  color: var(--danger);
+}

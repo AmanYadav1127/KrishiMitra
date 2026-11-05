@@ -1,0 +1,20 @@
+{
+  "name": "KrishiMitra — Digital assistant for small farmers",
+  "short_name": "KrishiMitra",
+  "description": "Offline-first crop advice, weather, prices and schemes for small farmers. Demo data only.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f8f2",
+  "theme_color": "#147a4a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

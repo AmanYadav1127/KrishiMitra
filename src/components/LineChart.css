@@ -1,0 +1,51 @@
+.line-chart {
+  width: 100%;
+}
+
+.line-chart svg {
+  display: block;
+  width: 100%;
+  height: clamp(132px, 14vw, 180px);
+  overflow: visible;
+}
+
+.chart-baseline {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.chart-area {
+  fill: var(--brand-soft);
+  opacity: 0.8;
+}
+
+.chart-line {
+  vector-effect: non-scaling-stroke;
+  fill: none;
+  stroke: var(--brand);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart-average {
+  vector-effect: non-scaling-stroke;
+  stroke: var(--caution);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 5;
+}
+
+.chart-dot {
+  fill: var(--brand);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.66rem;
+  color: var(--muted);
+}

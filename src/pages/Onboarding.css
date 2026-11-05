@@ -1,0 +1,154 @@
+.onboard-stage {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(20, 122, 74, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 90%, rgba(154, 98, 0, 0.12), transparent 40%),
+    var(--bg-2);
+}
+
+.onboard-card {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: calc(100dvh - 3rem);
+  max-height: 844px;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  border-radius: 36px;
+  box-shadow: 0 32px 80px -30px rgba(16, 40, 26, 0.45);
+}
+
+.onboard-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: calc(0.9rem + env(safe-area-inset-top)) 1rem 0.6rem;
+}
+
+.onboard-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 13px;
+  background: var(--brand);
+  color: var(--brand-ink);
+}
+
+.onboard-titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.onboard-titles h1 {
+  font-size: 1.15rem;
+}
+
+.onboard-progress {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 4px;
+  padding: 0 1rem 0.6rem;
+}
+
+.onboard-progress span {
+  flex: 1;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background 0.25s ease;
+}
+
+.onboard-progress span.is-on {
+  background: var(--brand);
+}
+
+.onboard-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding: 0.35rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  scrollbar-width: none;
+}
+
+.onboard-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.onboard-footer {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.onboard-footer .btn-primary {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .onboard-stage {
+    padding: 0;
+    background: var(--bg);
+  }
+
+  .onboard-card {
+    width: 100%;
+    height: 100dvh;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 481px) {
+  .onboard-card {
+    width: min(760px, calc(100vw - 3rem));
+    height: calc(100dvh - 3rem);
+    max-height: none;
+    border-radius: 28px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .onboard-card {
+    width: min(920px, calc(100vw - 4rem));
+    height: auto;
+    max-height: min(820px, calc(100dvh - 4rem));
+  }
+
+  .onboard-head {
+    padding: 1rem 2rem 0.65rem;
+  }
+
+  .onboard-progress {
+    padding: 0 2rem 0.65rem;
+  }
+
+  .onboard-scroll {
+    padding: 1.25rem 2rem 1.75rem;
+  }
+
+  .onboard-footer {
+    padding: 0.75rem 2rem;
+  }
+
+  .onboard-scroll .grid-2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

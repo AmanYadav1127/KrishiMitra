@@ -1,0 +1,95 @@
+.al-mark-all {
+  align-self: flex-start;
+}
+
+.alert-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  border-left: 4px solid transparent;
+}
+
+.alert-item.is-unread {
+  border-left-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.alert-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.alert-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.alert-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  border-radius: 11px;
+  background: var(--surface-3);
+  color: var(--ink-soft);
+}
+
+.alert-icon.danger,
+.alert-icon.rain {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.alert-icon.caution,
+.alert-icon.pest,
+.alert-icon.task {
+  background: var(--caution-soft);
+  color: var(--caution);
+}
+
+.alert-icon.good,
+.alert-icon.price {
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.alert-icon.info,
+.alert-icon.scheme,
+.alert-icon.whatsapp {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+.alert-icon.sms {
+  background: var(--caution-soft);
+  color: var(--caution);
+}
+
+.alert-icon.telegram {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.al-channel {
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.al-channel:last-of-type {
+  border-bottom: 0;
+}
+
+.al-channel-name {
+  gap: 0.5rem;
+}
+
+.alert-preview {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}

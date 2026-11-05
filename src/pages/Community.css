@@ -1,0 +1,68 @@
+.com-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.com-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.com-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.com-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 13px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.com-icon.helpline {
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.com-icon.kvk {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+.com-icon.officer {
+  background: var(--caution-soft);
+  color: var(--caution);
+}
+
+.com-icon.fpo {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.com-icon.rsk {
+  background: var(--surface-3);
+  color: var(--ink-soft);
+}
+
+.com-call {
+  align-self: flex-start;
+}
+
+.com-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  align-items: flex-start;
+}

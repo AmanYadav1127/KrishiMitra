@@ -1,0 +1,24 @@
+{
+  "name": "krishimitra",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "KrishiMitra - offline-first digital assistant for small farmers (demo data only)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:lines": "node scripts/check-lines.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "0.451.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "5.4.11"
+  }
+}

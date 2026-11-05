@@ -1,0 +1,70 @@
+.scheme-back {
+  align-self: flex-start;
+}
+
+.page-head h1 {
+  overflow-wrap: anywhere;
+}
+
+.scheme-reasons-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.scheme-docs,
+.scheme-apply {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.scheme-docs li,
+.scheme-apply li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.scheme-doc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-radius: 9px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.scheme-step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-radius: 9px;
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.scheme-actions {
+  padding-top: 0.15rem;
+}
+
+.scheme-contact {
+  background: var(--surface-2);
+}

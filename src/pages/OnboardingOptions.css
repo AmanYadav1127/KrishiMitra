@@ -1,0 +1,159 @@
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.language-option {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: left;
+}
+
+.language-option.active {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.language-native {
+  font-size: 1.02rem;
+  font-weight: 800;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.language-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.language-option svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  color: var(--brand);
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 58px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: left;
+  color: var(--ink);
+}
+
+.option-row.active {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.option-row > svg {
+  color: var(--brand);
+  flex: 0 0 auto;
+}
+
+.crop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.crop-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  min-height: 78px;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: left;
+}
+
+.crop-tile.active {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.crop-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 0.1rem;
+}
+
+.land-readout {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.soil-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 52px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.soil-tile.active {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.soil-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.soil-swatch.red {
+  background: #b5532f;
+}
+
+.soil-swatch.black {
+  background: #33352f;
+}
+
+.soil-swatch.sandy {
+  background: #d9bd86;
+}
+
+.soil-swatch.loam {
+  background: #7d6a4a;
+}
+
+@media (min-width: 1000px) {
+  .onboard-card .language-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .onboard-card .crop-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

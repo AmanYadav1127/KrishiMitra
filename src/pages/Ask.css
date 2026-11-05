@@ -1,0 +1,123 @@
+.ask-page {
+  min-height: 100%;
+}
+
+.ask-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ask-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.2rem 0 0.4rem;
+}
+
+.ask-row {
+  display: flex;
+  width: 100%;
+}
+
+.ask-row.user {
+  justify-content: flex-end;
+}
+
+.ask-bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-width: 89%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ask-bubble.assistant {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.ask-bubble.user {
+  background: var(--brand);
+  border: 1px solid var(--brand);
+  color: var(--brand-ink);
+  border-bottom-right-radius: 5px;
+}
+
+.ask-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.ask-sources {
+  gap: 0.3rem;
+}
+
+.ask-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  align-self: flex-start;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--brand);
+  min-height: 36px;
+}
+
+.ask-suggestions {
+  padding: 0.15rem 0;
+}
+
+.ask-suggestions .chip[disabled] {
+  opacity: 0.5;
+}
+
+.ask-composer {
+  position: sticky;
+  bottom: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0;
+  background: linear-gradient(to top, var(--bg) 72%, transparent);
+}
+
+.ask-composer .input {
+  flex: 1;
+  min-width: 0;
+  border-radius: 999px;
+}
+
+.mic-btn.is-listening {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-ink);
+  animation: micPulse 1.4s ease-out infinite;
+}
+
+.send-btn {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-ink);
+}
+
+.send-btn[disabled] {
+  opacity: 0.4;
+}
+
+@media (min-width: 700px) {
+  .ask-page {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+}

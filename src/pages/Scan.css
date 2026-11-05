@@ -1,0 +1,138 @@
+.scan-upload {
+  gap: 0.7rem;
+}
+
+.scan-upload-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.scan-camera {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.scan-preview {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  max-height: 220px;
+}
+
+.scan-preview img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.scan-sample {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 92px;
+  padding: 0.6rem 0.4rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: center;
+  color: var(--ink);
+}
+
+.scan-sample-leaf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sample-accent, var(--brand));
+  color: #fff;
+}
+
+.scan-analysing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.scan-pulse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand);
+  position: relative;
+}
+
+.scan-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--brand);
+  animation: pulseRing 1.5s ease-out infinite;
+}
+
+.scan-progress {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.scan-progress span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+  background: var(--brand);
+  transform-origin: left;
+  animation: scanProgress 2.5s linear both;
+}
+
+@keyframes scanProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.scan-steps {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.83rem;
+  line-height: 1.35;
+}
+
+.scan-history-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}

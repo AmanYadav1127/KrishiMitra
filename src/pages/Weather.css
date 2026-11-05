@@ -1,0 +1,122 @@
+.wx-alert {
+  align-items: center;
+}
+
+.wx-alert > div {
+  flex: 1;
+}
+
+.wx-current {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: linear-gradient(155deg, var(--surface) 45%, var(--info-soft));
+}
+
+.wx-current-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.wx-temp {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  margin: 0.15rem 0 0.2rem;
+}
+
+.wx-temp span {
+  font-size: 1.5rem;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.wx-current-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  flex: 0 0 auto;
+  border-radius: 26px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.wx-moisture {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.wx-moisture span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--brand);
+}
+
+.wx-chart-note {
+  margin-top: 0.4rem;
+}
+
+.wx-days {
+  gap: 0.35rem;
+}
+
+.wx-day {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) 26px 48px 66px;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  min-height: 54px;
+}
+
+.wx-day-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.wx-day-icon {
+  color: var(--brand);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.wx-day-temps {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.wx-day-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.wx-day-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+@media (max-width: 340px) {
+  .wx-day {
+    grid-template-columns: minmax(0, 1fr) 22px 44px 60px;
+  }
+}
